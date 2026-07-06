@@ -77,6 +77,9 @@ The architecture should prioritize:
 
 - JWT authentication.
 - Password hashing using BCrypt.
+- Password complexity requirements.
+- Brute force protection.
+- Account lockout after repeated failed login attempts.
 
 ---
 
