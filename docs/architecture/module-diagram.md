@@ -1,0 +1,45 @@
+# Module Diagram
+
+```text
+┌────────────┐
+│    User    │
+└─────┬──────┘
+      │
+      ├───────────────┐
+      │               │
+      ▼               ▼
+┌───────────┐   ┌───────────┐
+│ Nutrition │   │  Workout  │
+└─────┬─────┘   └─────┬─────┘
+      │               │
+      └──────┬────────┘
+             │
+             ▼
+     ┌────────────────┐
+     │ Recommendation │
+     └────────┬───────┘
+              │
+              ▼
+     ┌────────────────┐
+     │ Notifications  │
+     └────────────────┘
+
+┌────────────┐
+│  Progress  │──────────┘
+└────────────┘
+
+┌────────────────┐
+│ Women's Health │────────┘
+└────────────────┘
+```
+
+
+# Internal Structure of a Module
+
+Every module should follow the same pattern:
+nutrition
+├── api
+├── application
+├── domain
+├── infrastructure
+└── web

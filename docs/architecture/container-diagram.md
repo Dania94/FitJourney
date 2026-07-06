@@ -1,0 +1,40 @@
+# Container Diagram
+
+```text
+┌──────────┐
+│  Browser │
+└────┬─────┘
+     │ HTTPS
+     ▼
+┌────────────────────────────┐
+│        Angular SPA         │
+│         (Frontend)         │
+└────────────┬───────────────┘
+             │ REST API
+             ▼
+┌────────────────────────────┐
+│       Spring Boot App      │
+│      Modular Monolith      │
+└────────────┬───────────────┘
+             │
+             ▼
+┌────────────────────────────┐
+│        PostgreSQL          │
+└────────────────────────────┘
+```
+
+
+
+# Future Version
+Browser
+    ↓
+Angular
+    ↓
+API Gateway
+    ↓
+Spring Boot
+    ↓
+PostgreSQL
+
+Recommendation Service
+Notification Service
